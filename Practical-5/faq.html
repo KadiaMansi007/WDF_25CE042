@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+</head>
+ 
+<body>
+ 
+<a href="#maincontent" class="skip-link">Skip to Main Content</a>
+ 
+<header>
+    <div class="header-brand">
+        <img src="Screenshot 2026-10-09 154716.png" alt="StudentHub Logo">
+        <h1>StudentHub</h1>
+    </div>
+    <p>Your Student Portal</p>
+    <div class="header-actions">
+        <button type="button" id="theme-toggle" class="btn-ghost" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="btn-ghost menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </div>
+</header>
+ 
+<nav aria-label="Main Navigation" id="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html" class="active" aria-current="page">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+ 
+<nav aria-label="Breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>FAQ</span>
+</nav>
+ 
+<main id="maincontent">
+    <section>
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <article class="faq-item">
+                <h3><button type="button" class="accordion-btn" id="faq-btn-1" aria-expanded="false" aria-controls="faq-panel-1">How do I register?</button></h3>
+                <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
+                    <p>Open the Register page and complete the registration form.</p>
+                </div>
+            </article>
+            <article class="faq-item">
+                <h3><button type="button" class="accordion-btn" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">How do I login?</button></h3>
+                <div class="accordion-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+                    <p>Use your registered email and password.</p>
+                </div>
+            </article>
+            <article class="faq-item">
+                <h3><button type="button" class="accordion-btn" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">How can I contact the college?</button></h3>
+                <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+                    <p>Visit the Contact page for phone number, email and address.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+ 
+<aside>
+    <h3>Support</h3>
+    <p>Email support@studenthub.com</p>
+</aside>
+ 
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+ 
+</body>
+</html>

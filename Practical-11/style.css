@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #243b55;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 6px 6px 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 9px 14px;
+    background: #2457a7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background: #c62828;
+}
+
+.inline-form {
+    display: inline;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #243b55;
+    color: white;
+}
+
+.success {
+    color: #176b32;
+    background: #e2f5e8;
+    padding: 10px;
+}
+
+.error {
+    color: #a11;
+    background: #ffe8e8;
+    padding: 10px;
+}
+
+.pagination {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}

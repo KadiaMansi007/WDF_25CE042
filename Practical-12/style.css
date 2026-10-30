@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    margin: 0;
+    padding: 20px;
+    color: #263238;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #1d4268;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 16px;
+    margin-top: 15px;
+    background: #2563a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background: #c62828;
+}
+
+.success {
+    background: #e0f5e7;
+    color: #176b36;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.error {
+    background: #ffebee;
+    color: #a21d2a;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.event-card {
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 20px 0;
+}
+
+.poster-preview {
+    display: block;
+    max-width: 220px;
+    max-height: 220px;
+    object-fit: contain;
+    margin: 12px 0;
+}
+
+a {
+    color: #1769aa;
+}

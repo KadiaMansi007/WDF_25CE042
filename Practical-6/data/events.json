@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "HTML5 & CSS3 Workshop",
+    "category": "Workshop",
+    "date": "2026-11-03",
+    "venue": "Computer Lab 1",
+    "seats": 60,
+    "description": "Hands-on session covering semantic HTML5, accessibility and responsive CSS layouts."
+  },
+  {
+    "id": 2,
+    "title": "Annual Coding Hackathon",
+    "category": "Technical",
+    "date": "2026-11-10",
+    "venue": "Seminar Hall",
+    "seats": 120,
+    "description": "24-hour team hackathon with mentors, snacks and prizes for the best projects."
+  },
+  {
+    "id": 3,
+    "title": "Inter-College Sports Day",
+    "category": "Sports",
+    "date": "2026-11-15",
+    "venue": "College Ground",
+    "seats": 300,
+    "description": "Track and field events, relay races and team games with neighbouring colleges."
+  },
+  {
+    "id": 4,
+    "title": "Cultural Fest \"Rang\"",
+    "category": "Cultural",
+    "date": "2026-11-21",
+    "venue": "Open Air Theatre",
+    "seats": 500,
+    "description": "Music, dance and drama performances by students from every department."
+  },
+  {
+    "id": 5,
+    "title": "Placement Orientation",
+    "category": "Career",
+    "date": "2026-11-25",
+    "venue": "Main Auditorium",
+    "seats": 250,
+    "description": "Overview of the placement process, eligibility rules and company schedule."
+  },
+  {
+    "id": 6,
+    "title": "Web Frameworks Guest Lecture",
+    "category": "Workshop",
+    "date": "2026-12-02",
+    "venue": "Seminar Hall",
+    "seats": 150,
+    "description": "Industry speaker explains how modern web frameworks are used in real projects."
+  },
+  {
+    "id": 7,
+    "title": "Photography Contest",
+    "category": "Cultural",
+    "date": "2026-12-05",
+    "venue": "Art Gallery",
+    "seats": 80,
+    "description": "Submit your best campus photograph; winners are displayed in the gallery."
+  },
+  {
+    "id": 8,
+    "title": "Inter-Department Cricket",
+    "category": "Sports",
+    "date": "2026-12-09",
+    "venue": "Cricket Ground",
+    "seats": 200,
+    "description": "Knock-out cricket tournament between all engineering departments."
+  },
+  {
+    "id": 9,
+    "title": "AI & ML Bootcamp",
+    "category": "Technical",
+    "date": "2026-12-14",
+    "venue": "Computer Lab 2",
+    "seats": 45,
+    "description": "Two-day bootcamp introducing machine learning with Python and notebooks."
+  },
+  {
+    "id": 10,
+    "title": "Resume Building Session",
+    "category": "Career",
+    "date": "2026-12-18",
+    "venue": "Placement Cell",
+    "seats": 70,
+    "description": "Learn to write an effective resume and LinkedIn profile with HR experts."
+  },
+  {
+    "id": 11,
+    "title": "Winter Dance Night",
+    "category": "Cultural",
+    "date": "2027-01-08",
+    "venue": "Open Air Theatre",
+    "seats": 400,
+    "description": "An evening of solo and group dance performances under the lights."
+  },
+  {
+    "id": 12,
+    "title": "Open Source Day",
+    "category": "Technical",
+    "date": "2027-01-15",
+    "venue": "Innovation Hub",
+    "seats": 90,
+    "description": "Make your first open-source contribution with help from experienced mentors."
+  },
+  {
+    "id": 13,
+    "title": "Basketball League",
+    "category": "Sports",
+    "date": "2027-01-22",
+    "venue": "Indoor Stadium",
+    "seats": 160,
+    "description": "Five-a-side basketball league matches played over the weekend."
+  },
+  {
+    "id": 14,
+    "title": "Mock Interview Drive",
+    "category": "Career",
+    "date": "2027-01-28",
+    "venue": "Placement Cell",
+    "seats": 100,
+    "description": "Practice technical and HR interviews and receive written feedback."
+  },
+  {
+    "id": 15,
+    "title": "UI/UX Design Sprint",
+    "category": "Workshop",
+    "date": "2027-02-04",
+    "venue": "Design Studio",
+    "seats": 50,
+    "description": "Design and prototype a student-app screen in one day using Figma."
+  },
+  {
+    "id": 16,
+    "title": "Alumni Meet",
+    "category": "Career",
+    "date": "2027-02-12",
+    "venue": "Main Auditorium",
+    "seats": 350,
+    "description": "Network with alumni and learn about career paths in different industries."
+  }
+]

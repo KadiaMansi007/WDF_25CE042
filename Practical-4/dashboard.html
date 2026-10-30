@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+</head>
+ 
+<body>
+ 
+<a href="#maincontent" class="skip-link">Skip to Main Content</a>
+ 
+<header>
+    <div class="header-brand">
+        <img src="Screenshot 2026-10-09 154716.png" alt="StudentHub Logo">
+        <h1>StudentHub</h1>
+    </div>
+    <p>Your Student Portal</p>
+    <div class="header-actions">
+        <button type="button" id="theme-toggle" class="btn-ghost" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="btn-ghost menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </div>
+</header>
+ 
+<nav aria-label="Main Navigation" id="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html" class="active" aria-current="page">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+ 
+<nav aria-label="Breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>Dashboard</span>
+</nav>
+ 
+<main id="maincontent">
+    <section class="dashboard">
+        <h2>Student Dashboard</h2>
+        <div class="card-grid">
+            <article>
+                <h3>Attendance</h3>
+                <p>Attendance: <strong>92%</strong></p>
+            </article>
+            <article>
+                <h3>Assignments</h3>
+                <p>3 Assignments Pending</p>
+            </article>
+            <article>
+                <h3>Upcoming Exam</h3>
+                <p>Web Technology - 20 August</p>
+            </article>
+        </div>
+    </section>
+</main>
+ 
+<aside>
+    <h3>Notifications</h3>
+    <ul>
+        <li>Fee Payment Due</li>
+        <li>Workshop Registration Open</li>
+        <li>Exam Timetable Uploaded</li>
+    </ul>
+</aside>
+ 
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+ 
+</body>
+</html>

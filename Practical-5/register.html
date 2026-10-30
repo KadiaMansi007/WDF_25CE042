@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+</head>
+ 
+<body>
+ 
+<a href="#maincontent" class="skip-link">Skip to Main Content</a>
+ 
+<header>
+    <div class="header-brand">
+        <img src="Screenshot 2026-10-09 154716.png" alt="StudentHub Logo">
+        <h1>StudentHub</h1>
+    </div>
+    <p>Your Student Portal</p>
+    <div class="header-actions">
+        <button type="button" id="theme-toggle" class="btn-ghost" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="btn-ghost menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </div>
+</header>
+ 
+<nav aria-label="Main Navigation" id="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html" class="active" aria-current="page">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+ 
+<nav aria-label="Breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>Register</span>
+</nav>
+ 
+<main id="maincontent" class="full-width">
+    <section class="form-box wide">
+        <h2>Student Registration</h2>
+        <p>Fill in the details below to create your account. Fields marked <span aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
+ 
+        <form id="register-form" action="#" method="post" class="form-two-col" novalidate>
+ 
+            <div class="form-group">
+                <label for="fullname">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="fullname" name="fullname" placeholder="e.g. Abc Xyz"
+                       required minlength="3" maxlength="50" autocomplete="name" aria-describedby="fullname-error">
+                <span class="error-msg" id="fullname-error" aria-live="polite"></span>
+            </div>
+ 
+            <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="e.g. abc@example.com"
+                       required autocomplete="email" aria-describedby="email-error">
+                <span class="error-msg" id="email-error" aria-live="polite"></span>
+            </div>
+ 
+            <div class="form-group">
+                <label for="mobile">Mobile Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="mobile" name="mobile" placeholder="10-digit mobile number"
+                       required maxlength="10" inputmode="numeric" autocomplete="tel-national" aria-describedby="mobile-error">
+                <span class="error-msg" id="mobile-error" aria-live="polite"></span>
+            </div>
+ 
+            <div class="form-group">
+                <label for="course">Course <span aria-hidden="true">*</span></label>
+                <select id="course" name="course" required aria-describedby="course-error">
+                    <option value="">Select your course</option>
+                    <option value="Computer Engineering">Computer Engineering</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span class="error-msg" id="course-error" aria-live="polite"></span>
+            </div>
+ 
+            <div class="form-group">
+                <label for="year">Year <span aria-hidden="true">*</span></label>
+                <select id="year" name="year" required aria-describedby="year-error">
+                    <option value="">Select your year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+                <span class="error-msg" id="year-error" aria-live="polite"></span>
+            </div>
+ 
+            <fieldset class="form-group" aria-describedby="gender-error">
+                <legend>Gender <span aria-hidden="true">*</span></legend>
+                <div class="choice-row">
+                    <label class="choice"><input type="radio" name="gender" value="Female" required> Female</label>
+                    <label class="choice"><input type="radio" name="gender" value="Male"> Male</label>
+                    <label class="choice"><input type="radio" name="gender" value="Other"> Other</label>
+                </div>
+                <span class="error-msg" id="gender-error" aria-live="polite"></span>
+            </fieldset>
+ 
+            <div class="form-group">
+                <label for="password">Password <span aria-hidden="true">*</span></label>
+                <input type="password" id="password" name="password" placeholder="Create a strong password"
+                       required minlength="8" autocomplete="new-password" aria-describedby="password-hint password-error">
+                <div class="strength" aria-hidden="true"><div class="strength-bar" id="strength-bar"></div></div>
+                <span class="hint" id="password-hint">Strength: <strong id="strength-text">&ndash;</strong>. Use 8+ characters with upper, lower, number and symbol.</span>
+                <span class="error-msg" id="password-error" aria-live="polite"></span>
+            </div>
+ 
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password <span aria-hidden="true">*</span></label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password"
+                       required autocomplete="new-password" aria-describedby="confirm-password-error">
+                <span class="error-msg" id="confirm-password-error" aria-live="polite"></span>
+            </div>
+ 
+            <div class="form-group full">
+                <label for="captcha-input">Verification Code <span aria-hidden="true">*</span></label>
+                <div class="captcha-row">
+                    <canvas id="captcha-canvas" width="170" height="52" role="img" aria-label="CAPTCHA image with 5 characters"></canvas>
+                    <button type="button" id="captcha-refresh" class="btn-secondary" aria-label="Get a new code">&#8635; New code</button>
+                    <input type="text" id="captcha-input" name="captcha" placeholder="Type the code"
+                           required maxlength="5" autocomplete="off" aria-describedby="captcha-error">
+                </div>
+                <span class="error-msg" id="captcha-error" aria-live="polite"></span>
+            </div>
+ 
+            <div class="form-group full">
+                <label class="choice"><input type="checkbox" id="terms" name="terms" required aria-describedby="terms-error"> I accept the terms and conditions <span aria-hidden="true">*</span></label>
+                <span class="error-msg" id="terms-error" aria-live="polite"></span>
+            </div>
+ 
+            <div class="full button-row">
+                <button type="submit">Register</button>
+                <button type="reset" class="btn-secondary">Reset</button>
+            </div>
+        </form>
+ 
+        <div id="form-result" class="message" role="status" tabindex="-1" hidden></div>
+ 
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </section>
+</main>
+ 
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+ 
+<script src="js/register.js"></script>
+</body>
+</html>

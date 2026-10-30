@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+</head>
+ 
+<body>
+ 
+<a href="#maincontent" class="skip-link">Skip to Main Content</a>
+ 
+<header>
+    <div class="header-brand">
+        <img src="Screenshot 2026-10-09 154716.png" alt="StudentHub Logo">
+        <h1>StudentHub</h1>
+    </div>
+    <p>Your Student Portal</p>
+    <div class="header-actions">
+        <button type="button" id="theme-toggle" class="btn-ghost" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="btn-ghost menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </div>
+</header>
+ 
+<nav aria-label="Main Navigation" id="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html" class="active" aria-current="page">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+ 
+<nav aria-label="Breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>Events</span>
+</nav>
+ 
+<main id="maincontent">
+    <div class="notification-banner" id="notice-banner" role="status">
+        <p><strong>Notice:</strong> HTML5 Workshop on Monday &ndash; register before the last date.</p>
+        <button type="button" class="banner-close" id="banner-close" aria-label="Dismiss notification">&times;</button>
+    </div>
+ 
+    <section>
+        <h2>Upcoming Events</h2>
+        <div class="card-grid">
+            <article>
+                <h3>HTML Workshop</h3>
+                <p>Date: 18 August 2026</p>
+                <p>Venue: Computer Lab</p>
+                <button type="button" class="btn-small" data-modal-title="HTML Workshop" data-modal-text="HTML Workshop will be held on 18 August 2026 at the Computer Lab. Register before the last date to participate.">View Details</button>
+            </article>
+            <article>
+                <h3>Hackathon</h3>
+                <p>Date: 25 August 2026</p>
+                <p>Venue: Seminar Hall</p>
+                <button type="button" class="btn-small" data-modal-title="Hackathon" data-modal-text="Hackathon will be held on 25 August 2026 at the Seminar Hall. Register before the last date to participate.">View Details</button>
+            </article>
+            <article>
+                <h3>Sports Day</h3>
+                <p>Date: 5 September 2026</p>
+                <p>Venue: College Ground</p>
+                <button type="button" class="btn-small" data-modal-title="Sports Day" data-modal-text="Sports Day will be held on 5 September 2026 at the College Ground. Register before the last date to participate.">View Details</button>
+            </article>
+        </div>
+    </section>
+</main>
+ 
+<aside>
+    <h3>Reminder</h3>
+    <p>Register before the last date to participate.</p>
+</aside>
+ 
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+ 
+</body>
+</html>

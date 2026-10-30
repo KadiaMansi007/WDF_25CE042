@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+ 
+<a href="#maincontent" class="skip-link">Skip to Main Content</a>
+ 
+<header>
+    <div class="header-brand">
+        <img src="Screenshot 2026-10-09 154716.png" alt="StudentHub Logo">
+        <h1>StudentHub</h1>
+    </div>
+    <p>Your Student Portal</p>
+</header>
+ 
+<nav aria-label="Main Navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html" class="active" aria-current="page">Feedback</a></li>
+    </ul>
+</nav>
+ 
+<nav aria-label="Breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>Feedback</span>
+</nav>
+ 
+<main id="maincontent">
+    <section class="form-box">
+        <h2>Share Your Feedback</h2>
+        <p>Tell us how we can improve StudentHub.</p>
+ 
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+ 
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+ 
+            <div class="form-group">
+                <label for="rating">Overall Rating</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="3">3 - Good</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="1">1 - Needs Improvement</option>
+                </select>
+            </div>
+ 
+            <div class="form-group">
+                <label for="feedback">Your Feedback</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Share your suggestions or experience" required></textarea>
+            </div>
+ 
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+</main>
+ 
+<aside>
+    <h3>Thank You!</h3>
+    <p>Your feedback helps us improve StudentHub.</p>
+</aside>
+ 
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+ 
+</body>
+</html>

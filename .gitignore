@@ -1,0 +1,8 @@
+*.doc
+*.docx
+*.pdf
+~$*.doc
+~$*.docx
+.png
+.jpg
+.jpeg

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Student JSON API</title></head>
+<body>
+<h1>Student Records</h1>
+<p id="status" role="status"></p>
+<form id="student-form">
+    <input name="name" placeholder="Name" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="course" placeholder="Course" required>
+    <button>Add Student</button>
+</form>
+<ul id="students"></ul>
+<script>
+const api = "api_students.php";
+const statusBox = document.getElementById("status");
+const list = document.getElementById("students");
+ 
+async function loadStudents() {
+    statusBox.textContent = "Loading...";
+    try {
+        const response = await fetch(api);
+        if (!response.ok) throw new Error("Could not load students");
+        const students = await response.json();
+        list.replaceChildren();
+        students.forEach(student => {
+            const li = document.createElement("li");
+            li.textContent = `${student.name} (${student.email}) - ${student.course} `;
+            const button = document.createElement("button");
+            button.textContent = "Delete";
+            button.addEventListener("click", () => deleteStudent(student.id));
+            li.appendChild(button);
+            list.appendChild(li);
+        });
+        statusBox.textContent = `${students.length} student(s) loaded.`;
+    } catch (error) {
+        statusBox.textContent = error.message;
+    }
+}
+ 
+document.getElementById("student-form").addEventListener("submit", async event => {
+    event.preventDefault();
+    const form = new FormData(event.target);
+    const data = Object.fromEntries(form.entries());
+    try {
+        const response = await fetch(api, {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(data)
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || "Insert failed");
+        event.target.reset();
+        await loadStudents();
+    } catch (error) {
+        statusBox.textContent = error.message;
+    }
+});
+ 
+async function deleteStudent(id) {
+    if (!confirm("Delete this student?")) return;
+    const response = await fetch(api, {
+        method: "DELETE",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({id})
+    });
+    const result = await response.json();
+    statusBox.textContent = result.message || result.error;
+    if (response.ok) loadStudents();
+}
+ 
+loadStudents();
+</script>
+</body>
+</html>

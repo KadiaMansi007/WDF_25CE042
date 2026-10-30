@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "enrollment": "25CE001",
+    "name": "Aarav Shah",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "aarav.shah@example.com",
+    "cgpa": 9.12
+  },
+  {
+    "id": 2,
+    "enrollment": "25CE011",
+    "name": "Diya Mehta",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "diya.mehta@example.com",
+    "cgpa": 8.74
+  },
+  {
+    "id": 3,
+    "enrollment": "25CE018",
+    "name": "Kabir Joshi",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "kabir.joshi@example.com",
+    "cgpa": 7.95
+  },
+  {
+    "id": 4,
+    "enrollment": "25CE027",
+    "name": "Riya Desai",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "riya.desai@example.com",
+    "cgpa": 9.4
+  },
+  {
+    "id": 5,
+    "enrollment": "25CE042",
+    "name": "Abc Xyz",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "abc.xyz@example.com",
+    "cgpa": 8.86
+  },
+  {
+    "id": 6,
+    "enrollment": "25CE055",
+    "name": "Yash Trivedi",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "yash.trivedi@example.com",
+    "cgpa": 7.42
+  },
+  {
+    "id": 7,
+    "enrollment": "25CS004",
+    "name": "Neha Parikh",
+    "department": "Computer Science",
+    "year": 2,
+    "email": "neha.parikh@example.com",
+    "cgpa": 8.21
+  },
+  {
+    "id": 8,
+    "enrollment": "25CS019",
+    "name": "Rohan Pandya",
+    "department": "Computer Science",
+    "year": 2,
+    "email": "rohan.pandya@example.com",
+    "cgpa": 8.03
+  },
+  {
+    "id": 9,
+    "enrollment": "25CS033",
+    "name": "Isha Solanki",
+    "department": "Computer Science",
+    "year": 2,
+    "email": "isha.solanki@example.com",
+    "cgpa": 9.05
+  },
+  {
+    "id": 10,
+    "enrollment": "25CS046",
+    "name": "Karan Vyas",
+    "department": "Computer Science",
+    "year": 2,
+    "email": "karan.vyas@example.com",
+    "cgpa": 7.68
+  },
+  {
+    "id": 11,
+    "enrollment": "25IT007",
+    "name": "Anjali Rana",
+    "department": "Information Technology",
+    "year": 2,
+    "email": "anjali.rana@example.com",
+    "cgpa": 8.58
+  },
+  {
+    "id": 12,
+    "enrollment": "25IT015",
+    "name": "Dev Thakkar",
+    "department": "Information Technology",
+    "year": 2,
+    "email": "dev.thakkar@example.com",
+    "cgpa": 7.89
+  },
+  {
+    "id": 13,
+    "enrollment": "25IT024",
+    "name": "Pooja Chauhan",
+    "department": "Information Technology",
+    "year": 2,
+    "email": "pooja.chauhan@example.com",
+    "cgpa": 9.21
+  },
+  {
+    "id": 14,
+    "enrollment": "25IT038",
+    "name": "Harsh Bhatt",
+    "department": "Information Technology",
+    "year": 2,
+    "email": "harsh.bhatt@example.com",
+    "cgpa": 6.97
+  },
+  {
+    "id": 15,
+    "enrollment": "24EC012",
+    "name": "Sneha Modi",
+    "department": "Electronics & Communication",
+    "year": 3,
+    "email": "sneha.modi@example.com",
+    "cgpa": 8.34
+  },
+  {
+    "id": 16,
+    "enrollment": "24EC029",
+    "name": "Vivek Gajjar",
+    "department": "Electronics & Communication",
+    "year": 3,
+    "email": "vivek.gajjar@example.com",
+    "cgpa": 7.76
+  }
+]

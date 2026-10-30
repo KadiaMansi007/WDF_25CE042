@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+</head>
+ 
+<body>
+ 
+<a href="#maincontent" class="skip-link">Skip to Main Content</a>
+ 
+<header>
+    <div class="header-brand">
+        <img src="Screenshot 2026-10-09 154716.png" alt="StudentHub Logo">
+        <h1>StudentHub</h1>
+    </div>
+    <p>Your Student Portal</p>
+    <div class="header-actions">
+        <button type="button" id="theme-toggle" class="btn-ghost" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="btn-ghost menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </div>
+</header>
+ 
+<nav aria-label="Main Navigation" id="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html" class="active" aria-current="page">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+ 
+<nav aria-label="Breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>Admin</span>
+</nav>
+ 
+<main id="maincontent">
+    <section>
+        <h2>Administration</h2>
+        <div class="card-grid">
+            <article>
+                <h3>Manage Students</h3>
+                <p>Add, edit or remove student records.</p>
+            </article>
+            <article>
+                <h3>Manage Events</h3>
+                <p>Create and update college events.</p>
+            </article>
+            <article>
+                <h3>Manage Feedback</h3>
+                <p>Review feedback submitted by students.</p>
+            </article>
+        </div>
+    </section>
+ 
+    <section>
+        <h2>Student Records</h2>
+ 
+        <div class="toolbar">
+            <div class="form-group">
+                <label for="student-search">Search</label>
+                <input type="search" id="student-search" placeholder="Name, enrollment no. or email">
+            </div>
+            <div class="form-group">
+                <label for="student-dept">Department</label>
+                <select id="student-dept"><option value="all">All departments</option></select>
+            </div>
+            <div class="form-group">
+                <label for="student-sort">Sort by</label>
+                <select id="student-sort">
+                    <option value="name-asc">Name (A &ndash; Z)</option>
+                    <option value="name-desc">Name (Z &ndash; A)</option>
+                    <option value="cgpa-desc">CGPA (high to low)</option>
+                    <option value="cgpa-asc">CGPA (low to high)</option>
+                    <option value="enrollment-asc">Enrollment No.</option>
+                </select>
+            </div>
+        </div>
+ 
+        <p id="student-status" class="status" role="status" aria-live="polite"></p>
+        <div class="table-responsive">
+            <table>
+                <caption class="sr-only">Student records</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Enrollment No.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">CGPA</th>
+                    </tr>
+                </thead>
+                <tbody id="student-rows"></tbody>
+            </table>
+        </div>
+        <nav id="student-pager" class="pagination" aria-label="Student records pagination"></nav>
+    </section>
+</main>
+ 
+<aside>
+    <h3>Administrator Notice</h3>
+    <p>Maintain updated student records regularly.</p>
+</aside>
+ 
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+ 
+<script type="module" src="js/students-page.js"></script>
+</body>
+</html>
